@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+</head>
+
+<body>
+    <script>
+        let idade = Number(prompt("Quanto anos você tem? "))
+
+        if (idade >= 18) {
+            alert("Você pode tirar a sua carteira de motorista.")
+        } else if (idade >= 16) {
+            let idade_votacao = 18 - idade;
+            alert("Você pode votar, mas não pode tirar a carteira de motorista, faltam " + idade_votacao + " anos")
+        }
+        else {
+            let diferenca = 18 - idade;
+            alert("Você não pode tirar a carteira de motorista, faltam " + diferenca + " anos.")
+         }
+        // >= significa maior que, precisamos pra fazer as comparaçoes de idade nesse caso, pra ver qual é maior
+    </script>
+</body>
+
+</html>

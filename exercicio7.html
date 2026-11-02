@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let opcao = prompt("Escolha um plano:\n1 - Básico\n2 - Padrão\n3 - Premium\n4 - familia")
+       
+       switch(opcao){
+        case "1": alert("Básico: R$ 20 por mês"); break
+        case "2": alert("padrão: R$ 35 por mês"); break
+        case "3": alert("premium: R$ 50 por mês"); break
+        case "4": alert("familia: R$ 60 por mês"); break
+        default:
+            alert("opção invalida")
+       }
+//o brack serve pra parar, se não o usarmos ele vai mostrar todos os cases, o default e como se fosse o else, caso nenhuma das opções seja atendidas
+    </script>
+</body>
+</html>

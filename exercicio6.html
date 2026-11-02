@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tarefas = [];
+        let quantidade = Number(prompt("Quantas tarefas você quer colocar na lista?"));
+        for (let i = 1; i <= quantidade; i++){
+            let tarefa = prompt("Digite a sua " + i + " de " + quantidade);
+            tarefas.push(tarefa);
+        }
+
+        document.write("<h2>Tarefas da semana</h2>");
+
+        for (let i = 0; i < tarefas.length; i++){
+        document.write(". " + tarefas[i] + "<br>");
+        }
+
+        document.write("<p>Total: " + tarefas.length + " Tarefas</p>")
+// começa vazio por que não temos nenhuma tarefa na lista de tarefas, pq estamos pedindo a primeira tarefa
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cantores =  ["Teto", "Alee", "Matue", "Ryu", "Brandão", "Wiu", "Niink"]
+
+        document.write("<h2>Minha playlist</h2>");
+        for (let i = 0; i < cantores.length; i++){
+            document.write((i + 1) + ". " + cantores[i] + "<br>")
+        }
+
+        document.write("<p>Total: " + cantores.length + " cantores</p>")
+        // começamos com zero porque não tinhamos dado nenhuma volta com o for, e quando usamos o <= ele cria o 8 cantor
+    </script>
+</body>
+</html>

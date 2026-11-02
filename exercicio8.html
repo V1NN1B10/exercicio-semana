@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Qual o seu nome? ")
+        let interesses = []
+        let item = prompt("Digite algo que você curte (Ou fim para parar)")
+        let aprender = prompt("O que você quer aprender a criar?");
+
+        while (item !== "fim"){
+            interesses.push(item)
+            item = prompt("Mais um? (ou fim para parar)")
+        }
+
+        document.write("<h1>" + nome + "</h1>")
+        document.write("<p>Quero aprender a criar: " + aprender + "</p>");
+
+        if (interesses.length === 0){
+            alert("Você não contou nenhum interesse")
+        }else{
+            document.write("<p>Coisas que eu curto: </p>")
+            for (let i = 0; i < interesses.length; i++){
+                document.write(". " + interesses[i] + "<br>")
+            }
+        }
+        // while você não sabe quantas vezes a pessoa vai adicionar interesses. Ela decide quando parar.
+    </script>
+</body>
+</html>
